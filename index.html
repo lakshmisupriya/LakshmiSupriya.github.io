@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lakshmi Supriya | Portfolio</title>
- 
+
 <style>
     body {
         margin: 0;
@@ -13,60 +13,63 @@
         color: #111;
         transition: 0.3s;
     }
- 
+
     body.dark {
         background: #111;
         color: #f5f5f5;
     }
- 
+
     header {
         text-align: center;
-        padding: 60px 20px 30px;
+        padding: 50px 20px 30px;
     }
- 
+
     header img {
-        width: 170px;
-        height: 170px;
+        width: 220px;
+        height: 220px;
         border-radius: 50%;
-        object-fit: cover;
+        object-fit: contain;
+        object-position: center;
+        background: white;
+        padding: 4px;
     }
- 
+
     h1 {
-        font-size: 42px;
+        font-size: 56px;
         font-weight: 400;
-        margin-bottom: 10px;
+        margin: 25px 0 10px;
     }
- 
+
     .subtitle {
-        font-size: 26px;
+        font-size: 30px;
         color: #999;
-        margin-bottom: 30px;
+        margin-bottom: 35px;
     }
- 
+
     .links a {
-        font-size: 34px;
-        margin: 0 14px;
+        font-size: 38px;
+        margin: 0 18px;
         color: inherit;
         text-decoration: none;
     }
- 
+
     .toggle-box {
         margin-top: 35px;
-        font-size: 22px;
+        font-size: 26px;
     }
- 
+
     .switch {
         position: relative;
         display: inline-block;
-        width: 58px;
-        height: 30px;
+        width: 62px;
+        height: 32px;
         vertical-align: middle;
     }
- 
+
     .switch input {
         display: none;
     }
- 
+
     .slider {
         position: absolute;
         cursor: pointer;
@@ -75,40 +78,40 @@
         border-radius: 30px;
         transition: 0.3s;
     }
- 
+
     .slider:before {
         content: "";
         position: absolute;
-        height: 24px;
-        width: 24px;
+        height: 26px;
+        width: 26px;
         left: 3px;
         bottom: 3px;
         background: white;
         border-radius: 50%;
         transition: 0.3s;
     }
- 
+
     input:checked + .slider {
         background: #444;
     }
- 
+
     input:checked + .slider:before {
-        transform: translateX(28px);
+        transform: translateX(30px);
     }
- 
+
     section {
         max-width: 900px;
         margin: auto;
         padding: 20px 35px;
     }
- 
+
     .intro {
         font-family: Georgia, serif;
         font-size: 28px;
         line-height: 1.8;
         margin: 60px 0;
     }
- 
+
     .section-title {
         color: #888;
         font-size: 20px;
@@ -118,22 +121,22 @@
         margin-top: 55px;
         text-transform: uppercase;
     }
- 
+
     body.dark .section-title {
         border-bottom: 1px solid #444;
     }
- 
+
     h2 {
         font-size: 38px;
         margin-bottom: 12px;
     }
- 
+
     .date {
         color: #777;
         font-size: 20px;
         margin: 12px 0;
     }
- 
+
     .tag {
         display: inline-block;
         background: #e8e8e8;
@@ -143,34 +146,35 @@
         font-size: 18px;
         color: #111;
     }
- 
+
     body.dark .tag {
         background: #333;
         color: #fff;
     }
- 
+
     li {
         font-family: Georgia, serif;
         font-size: 24px;
         line-height: 1.7;
         margin-bottom: 8px;
     }
- 
+
     .resume-btn {
         display: inline-block;
         margin-top: 20px;
-        padding: 12px 24px;
+        padding: 14px 28px;
         background: #111;
         color: white;
         text-decoration: none;
         border-radius: 25px;
+        font-size: 20px;
     }
- 
+
     body.dark .resume-btn {
         background: white;
         color: #111;
     }
- 
+
     footer {
         text-align: center;
         padding: 40px;
@@ -178,21 +182,21 @@
     }
 </style>
 </head>
- 
+
 <body>
- 
+
 <header>
     <img src="profile.jpg" alt="Lakshmi Supriya">
- 
+
     <h1>Lakshmi Supriya</h1>
     <div class="subtitle">Data Analyst | Palantir Foundry | Aviation Domain</div>
- 
+
     <div class="links">
         <a href="https://github.com/lakshmisupriya" target="_blank">🌐</a>
         <a href="https://www.linkedin.com/in/lakshmi-supriya-g" target="_blank">in</a>
         <a href="mailto:Supriya.priya963@gmail.com">✉</a>
     </div>
- 
+
     <div class="toggle-box">
         Dark Mode
         <label class="switch">
@@ -200,19 +204,23 @@
             <span class="slider"></span>
         </label>
     </div>
+
+    <div>
+        <a class="resume-btn" href="resume.pdf" target="_blank">Download Resume</a>
+    </div>
 </header>
- 
+
 <section>
- 
+
     <p class="intro">
         Hi, my name is Lakshmi Supriya. I am a Data Analyst with experience in
         Palantir Foundry, aviation domain projects, documentation, data analytics,
         and business intelligence. I enjoy transforming data into actionable insights
         and supporting business teams with data-driven solutions.
     </p>
- 
+
     <div class="section-title">Experience</div>
- 
+
     <h2>Palantir Foundry</h2>
     <div class="date">Data Analytics & Ontology Experience</div>
     <span class="tag">Ontology Manager</span>
@@ -221,7 +229,7 @@
         <li>Supported data integration, validation, and business analytics use cases.</li>
         <li>Helped convert business requirements into data-driven solutions.</li>
     </ul>
- 
+
     <h2>Aviation Domain</h2>
     <div class="date">AIPC / EIPC Documentation Work</div>
     <span class="tag">Aviation Documentation</span>
@@ -230,60 +238,54 @@
         <li>Supported data validation, documentation accuracy, and process improvement.</li>
         <li>Gained experience in aviation maintenance and operational analytics.</li>
     </ul>
- 
+
     <div class="section-title">Projects</div>
- 
+
     <h2>Delta TechOps Project</h2>
     <span class="tag">Aviation Analytics</span>
     <ul>
         <li>Supported aviation maintenance and operational analytics initiatives.</li>
         <li>Worked on documentation, reporting, and data validation activities.</li>
     </ul>
- 
+
     <h2>Palantir Foundry Project</h2>
     <span class="tag">Data Platform</span>
     <ul>
         <li>Worked with datasets, ontology models, dashboards, and workflows.</li>
         <li>Supported business users with analytics and reporting requirements.</li>
     </ul>
- 
+
     <div class="section-title">Skills and Interests</div>
- 
+
     <ul>
         <li><strong>Technical Skills:</strong> SQL, Python, Power BI, Palantir Foundry, Ontology Manager</li>
         <li><strong>Domain Skills:</strong> Aviation Documentation, AIPC, EIPC, Data Validation</li>
         <li><strong>Professional Skills:</strong> Business Analysis, Reporting, Problem Solving, Communication</li>
         <li><strong>Interests:</strong> Data Analytics, Aviation Operations, Business Intelligence</li>
     </ul>
- 
-    <div class="section-title">Resume</div>
- 
-    <p>Download my latest resume below.</p>
- 
-    <a class="resume-btn" href="resume.pdf" download>Download Resume</a>
- 
+
     <div class="section-title">Contact</div>
- 
+
     <ul>
         <li>Email: Supriya.priya963@gmail.com</li>
         <li>LinkedIn: https://www.linkedin.com/in/lakshmi-supriya-g</li>
         <li>GitHub: https://github.com/lakshmisupriya</li>
     </ul>
- 
+
 </section>
- 
+
 <footer>
     ©2026 Lakshmi Supriya
 </footer>
- 
+
 <script>
     const toggle = document.getElementById("darkToggle");
- 
+
     if (localStorage.getItem("darkMode") === "enabled") {
         document.body.classList.add("dark");
         toggle.checked = true;
     }
- 
+
     toggle.addEventListener("change", function () {
         if (this.checked) {
             document.body.classList.add("dark");
@@ -294,6 +296,6 @@
         }
     });
 </script>
- 
+
 </body>
 </html>
