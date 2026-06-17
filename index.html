@@ -5,181 +5,203 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lakshmi Supriya | Portfolio</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #ffffff;
-        color: #111;
-        transition: 0.3s;
-    }
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    color: #111;
+    transition: 0.3s;
+}
 
-    body.dark {
-        background: #111;
-        color: #f5f5f5;
-    }
+body.dark {
+    background: #111;
+    color: #f5f5f5;
+}
 
-    header {
-        text-align: center;
-        padding: 50px 20px 30px;
-    }
+header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
 
-    header img {
-        width: 220px;
-        height: 220px;
-        border-radius: 50%;
-        object-fit: contain;
-        object-position: center;
-        background: white;
-        padding: 4px;
-    }
+header img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
+    background: white;
+    padding: 4px;
+}
 
-    h1 {
-        font-size: 56px;
-        font-weight: 400;
-        margin: 25px 0 10px;
-    }
+h1 {
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 25px 0 10px;
+}
 
-    .subtitle {
-        font-size: 30px;
-        color: #999;
-        margin-bottom: 35px;
-    }
+.subtitle {
+    font-size: 24px;
+    color: #777;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
 
-    .links a {
-        font-size: 38px;
-        margin: 0 18px;
-        color: inherit;
-        text-decoration: none;
-    }
+.links a {
+    font-size: 34px;
+    margin: 0 18px;
+    color: inherit;
+    text-decoration: none;
+}
 
-    .toggle-box {
-        margin-top: 35px;
-        font-size: 26px;
-    }
+.toggle-box {
+    margin-top: 35px;
+    font-size: 22px;
+}
 
-    .switch {
-        position: relative;
-        display: inline-block;
-        width: 62px;
-        height: 32px;
-        vertical-align: middle;
-    }
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 62px;
+    height: 32px;
+    vertical-align: middle;
+}
 
-    .switch input {
-        display: none;
-    }
+.switch input {
+    display: none;
+}
 
-    .slider {
-        position: absolute;
-        cursor: pointer;
-        inset: 0;
-        background: #ccc;
-        border-radius: 30px;
-        transition: 0.3s;
-    }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: #ccc;
+    border-radius: 30px;
+    transition: 0.3s;
+}
 
-    .slider:before {
-        content: "";
-        position: absolute;
-        height: 26px;
-        width: 26px;
-        left: 3px;
-        bottom: 3px;
-        background: white;
-        border-radius: 50%;
-        transition: 0.3s;
-    }
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 3px;
+    bottom: 3px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
 
-    input:checked + .slider {
-        background: #444;
-    }
+input:checked + .slider {
+    background: #444;
+}
 
-    input:checked + .slider:before {
-        transform: translateX(30px);
-    }
+input:checked + .slider:before {
+    transform: translateX(30px);
+}
 
-    section {
-        max-width: 900px;
-        margin: auto;
-        padding: 20px 35px;
-    }
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px 35px;
+}
 
-    .intro {
-        font-family: Georgia, serif;
-        font-size: 28px;
-        line-height: 1.8;
-        margin: 60px 0;
-    }
+.intro {
+    font-size: 24px;
+    line-height: 1.8;
+    margin: 60px 0;
+    font-weight: 300;
+}
 
-    .section-title {
-        color: #888;
-        font-size: 20px;
-        letter-spacing: 2px;
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 12px;
-        margin-top: 55px;
-        text-transform: uppercase;
-    }
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #888;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 12px;
+    margin-top: 55px;
+    text-transform: uppercase;
+}
 
-    body.dark .section-title {
-        border-bottom: 1px solid #444;
-    }
+body.dark .section-title {
+    border-bottom: 1px solid #444;
+}
 
-    h2 {
-        font-size: 38px;
-        margin-bottom: 12px;
-    }
+h2 {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
 
-    .date {
-        color: #777;
-        font-size: 20px;
-        margin: 12px 0;
-    }
+.date {
+    color: #777;
+    font-size: 18px;
+    margin: 12px 0;
+}
 
-    .tag {
-        display: inline-block;
-        background: #e8e8e8;
-        padding: 10px 25px;
-        border-radius: 4px;
-        margin: 10px 0;
-        font-size: 18px;
-        color: #111;
-    }
+.tag {
+    display: inline-block;
+    background: #e8e8e8;
+    padding: 10px 22px;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #111;
+}
 
-    body.dark .tag {
-        background: #333;
-        color: #fff;
-    }
+body.dark .tag {
+    background: #333;
+    color: #fff;
+}
 
-    li {
-        font-family: Georgia, serif;
-        font-size: 24px;
-        line-height: 1.7;
-        margin-bottom: 8px;
-    }
+li {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
 
-    .resume-btn {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 14px 28px;
-        background: #111;
-        color: white;
-        text-decoration: none;
-        border-radius: 25px;
-        font-size: 20px;
-    }
+.resume-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
 
-    body.dark .resume-btn {
-        background: white;
-        color: #111;
-    }
+body.dark .resume-btn {
+    background: white;
+    color: #111;
+}
 
-    footer {
-        text-align: center;
-        padding: 40px;
-        font-size: 20px;
-    }
+.contact-links p {
+    font-size: 22px;
+    margin: 18px 0;
+}
+
+a {
+    color: #0077b5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #777;
+}
 </style>
 </head>
 
@@ -205,9 +227,7 @@
         </label>
     </div>
 
-    <div>
-        <a class="resume-btn" href="resume.pdf" target="_blank">Download Resume</a>
-    </div>
+    <a class="resume-btn" href="resume.pdf" target="_blank">Download Resume</a>
 </header>
 
 <section>
@@ -264,13 +284,21 @@
         <li><strong>Interests:</strong> Data Analytics, Aviation Operations, Business Intelligence</li>
     </ul>
 
-    <div class="section-title">Contact</div>
+    <div class="section-title">Let's Connect</div>
 
-    <ul>
-        <li>Email: Supriya.priya963@gmail.com</li>
-        <li>LinkedIn: https://www.linkedin.com/in/lakshmi-supriya-g</li>
-        <li>GitHub: https://github.com/lakshmisupriya</li>
-    </ul>
+    <div class="contact-links">
+        <p>
+            <a href="mailto:Supriya.priya963@gmail.com">📧 Email Me</a>
+        </p>
+
+        <p>
+            <a href="https://www.linkedin.com/in/lakshmi-supriya-g" target="_blank">💼 LinkedIn Profile</a>
+        </p>
+
+        <p>
+            <a href="https://github.com/lakshmisupriya" target="_blank">💻 GitHub Profile</a>
+        </p>
+    </div>
 
 </section>
 
@@ -279,22 +307,22 @@
 </footer>
 
 <script>
-    const toggle = document.getElementById("darkToggle");
+const toggle = document.getElementById("darkToggle");
 
-    if (localStorage.getItem("darkMode") === "enabled") {
+if (localStorage.getItem("darkMode") === "enabled") {
+    document.body.classList.add("dark");
+    toggle.checked = true;
+}
+
+toggle.addEventListener("change", function () {
+    if (this.checked) {
         document.body.classList.add("dark");
-        toggle.checked = true;
+        localStorage.setItem("darkMode", "enabled");
+    } else {
+        document.body.classList.remove("dark");
+        localStorage.setItem("darkMode", "disabled");
     }
-
-    toggle.addEventListener("change", function () {
-        if (this.checked) {
-            document.body.classList.add("dark");
-            localStorage.setItem("darkMode", "enabled");
-        } else {
-            document.body.classList.remove("dark");
-            localStorage.setItem("darkMode", "disabled");
-        }
-    });
+});
 </script>
 
 </body>
