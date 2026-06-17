@@ -1,92 +1,300 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Lakshmi Priya Portfolio</title>
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            max-width: 1000px;
-            margin:auto;
-            padding:20px;
-            background:#f4f4f4;
-        }
-        .card{
-            background:white;
-            padding:20px;
-            border-radius:10px;
-            margin-bottom:20px;
-            box-shadow:0 2px 5px rgba(0,0,0,0.1);
-        }
-        h1{
-            color:#0077b5;
-        }
-        a{
-            color:#0077b5;
-            text-decoration:none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lakshmi Priya | Portfolio</title>
+ 
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+        color: #111;
+        transition: 0.3s;
+    }
+ 
+    body.dark {
+        background: #111;
+        color: #f5f5f5;
+    }
+ 
+    header {
+        text-align: center;
+        padding: 60px 20px 30px;
+    }
+ 
+    header img {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+ 
+    h1 {
+        font-size: 42px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+ 
+    .subtitle {
+        font-size: 26px;
+        color: #999;
+        margin-bottom: 30px;
+    }
+ 
+    .links a {
+        font-size: 34px;
+        margin: 0 14px;
+        color: inherit;
+        text-decoration: none;
+    }
+ 
+    .toggle-box {
+        margin-top: 35px;
+        font-size: 22px;
+    }
+ 
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 58px;
+        height: 30px;
+        vertical-align: middle;
+    }
+ 
+    .switch input {
+        display: none;
+    }
+ 
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        inset: 0;
+        background: #ccc;
+        border-radius: 30px;
+        transition: 0.3s;
+    }
+ 
+    .slider:before {
+        content: "";
+        position: absolute;
+        height: 24px;
+        width: 24px;
+        left: 3px;
+        bottom: 3px;
+        background: white;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+ 
+    input:checked + .slider {
+        background: #444;
+    }
+ 
+    input:checked + .slider:before {
+        transform: translateX(28px);
+    }
+ 
+    section {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px 35px;
+    }
+ 
+    .intro {
+        font-family: Georgia, serif;
+        font-size: 28px;
+        line-height: 1.8;
+        margin: 60px 0;
+    }
+ 
+    .section-title {
+        color: #888;
+        font-size: 20px;
+        letter-spacing: 2px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 12px;
+        margin-top: 55px;
+        text-transform: uppercase;
+    }
+ 
+    body.dark .section-title {
+        border-bottom: 1px solid #444;
+    }
+ 
+    h2 {
+        font-size: 38px;
+        margin-bottom: 12px;
+    }
+ 
+    .date {
+        color: #777;
+        font-size: 20px;
+        margin: 12px 0;
+    }
+ 
+    .tag {
+        display: inline-block;
+        background: #e8e8e8;
+        padding: 10px 25px;
+        border-radius: 4px;
+        margin: 10px 0;
+        font-size: 18px;
+        color: #111;
+    }
+ 
+    body.dark .tag {
+        background: #333;
+        color: #fff;
+    }
+ 
+    li {
+        font-family: Georgia, serif;
+        font-size: 24px;
+        line-height: 1.7;
+        margin-bottom: 8px;
+    }
+ 
+    .resume-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 24px;
+        background: #111;
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+    }
+ 
+    body.dark .resume-btn {
+        background: white;
+        color: #111;
+    }
+ 
+    footer {
+        text-align: center;
+        padding: 40px;
+        font-size: 20px;
+    }
+</style>
 </head>
  
 <body>
  
-<div class="card">
+<header>
+    <img src="profile.jpg" alt="Lakshmi Priya">
+ 
     <h1>Lakshmi Priya</h1>
-    <h3>Data Analyst | Palantir Foundry | Aviation Domain</h3>
-</div>
+    <div class="subtitle">Data Analyst | Palantir Foundry | Aviation Domain</div>
  
-<div class="card">
-    <h2>About Me</h2>
-    <p>
-        Experienced Data Analyst with expertise in Palantir Foundry,
-        Aviation Operations, Data Analytics, Documentation, and Business Intelligence.
-        Passionate about solving business problems using data-driven solutions.
+    <div class="links">
+        <a href="https://github.com/lakshmisupriya" target="_blank">🌐</a>
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank">in</a>
+        <a href="mailto:your-email@example.com">✉</a>
+    </div>
+ 
+    <div class="toggle-box">
+        Dark Mode
+        <label class="switch">
+            <input type="checkbox" id="darkToggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+</header>
+ 
+<section>
+ 
+    <p class="intro">
+        Hi, my name is Lakshmi Priya. I am a Data Analyst with experience in
+        Palantir Foundry, aviation domain projects, documentation, and business intelligence.
+        This portfolio highlights my technical skills, project experience, and professional journey.
     </p>
-</div>
  
-<div class="card">
-    <h2>Skills</h2>
+    <div class="section-title">Experience</div>
+ 
+    <h2>Palantir Foundry</h2>
+    <div class="date">Data Analytics & Ontology Experience</div>
+    <span class="tag">Ontology Manager</span>
     <ul>
-        <li>Palantir Foundry</li>
-        <li>SQL</li>
-        <li>Python</li>
-        <li>Power BI</li>
-        <li>Data Analysis</li>
-        <li>Ontology Manager</li>
-        <li>Aviation Documentation</li>
+        <li>Worked with datasets, ontology models, dashboards, and operational workflows.</li>
+        <li>Supported data integration, validation, and business analytics use cases.</li>
+        <li>Helped convert business requirements into data-driven solutions.</li>
     </ul>
-</div>
  
-<div class="card">
-    <h2>Projects</h2>
+    <h2>Aviation Domain</h2>
+    <div class="date">AIPC / EIPC Documentation Work</div>
+    <span class="tag">Aviation Documentation</span>
+    <ul>
+        <li>Worked on aviation documentation related to aircraft parts and technical manuals.</li>
+        <li>Supported data validation, documentation accuracy, and process improvement.</li>
+        <li>Gained experience in aviation maintenance and operational analytics.</li>
+    </ul>
  
-    <h3>Delta TechOps</h3>
+    <div class="section-title">Projects</div>
+ 
+    <h2>Delta TechOps Project</h2>
+    <span class="tag">Aviation Analytics</span>
+    <ul>
+        <li>Supported aviation maintenance and operational analytics initiatives.</li>
+        <li>Worked on documentation, reporting, and data validation activities.</li>
+    </ul>
+ 
+    <h2>Palantir Foundry Project</h2>
+    <span class="tag">Data Platform</span>
+    <ul>
+        <li>Worked with datasets, ontology models, dashboards, and workflows.</li>
+        <li>Supported business users with analytics and reporting requirements.</li>
+    </ul>
+ 
+    <div class="section-title">Skills and Interests</div>
+ 
+    <ul>
+        <li><strong>Technical Skills:</strong> SQL, Python, Power BI, Palantir Foundry, Ontology Manager</li>
+        <li><strong>Domain Skills:</strong> Aviation Documentation, AIPC, EIPC, Data Validation</li>
+        <li><strong>Professional Skills:</strong> Business Analysis, Reporting, Problem Solving, Communication</li>
+        <li><strong>Interests:</strong> Data Analytics, Aviation Operations, Business Intelligence</li>
+    </ul>
+ 
+    <div class="section-title">Resume</div>
+ 
     <p>
-        Supported aviation maintenance and operational analytics initiatives.
+        Download my latest resume below.
     </p>
  
-    <h3>AIPC / EIPC Documentation</h3>
-    <p>
-        Worked on aviation documentation, data validation, and process improvements.
-    </p>
+    <a class="resume-btn" href="resume.pdf" download>Download Resume</a>
  
-    <h3>Palantir Foundry</h3>
-    <p>
-        Built datasets, ontology models, operational dashboards, and analytics workflows.
-    </p>
-</div>
+    <div class="section-title">Contact</div>
  
-<div class="card">
-    <h2>Resume</h2>
-    <p>Add your resume PDF later.</p>
-</div>
+    <ul>
+        <li>Email: your-email@example.com</li>
+        <li>LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN-ID</li>
+        <li>GitHub: https://github.com/lakshmisupriya</li>
+    </ul>
  
-<div class="card">
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <p>LinkedIn: Add your LinkedIn profile URL</p>
-    <p>GitHub: Add your GitHub profile URL</p>
-</div>
+</section>
+ 
+<footer>
+    ©2026 Lakshmi Priya
+</footer>
+ 
+<script>
+    const toggle = document.getElementById("darkToggle");
+ 
+    if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark");
+        toggle.checked = true;
+    }
+ 
+    toggle.addEventListener("change", function () {
+        if (this.checked) {
+            document.body.classList.add("dark");
+            localStorage.setItem("darkMode", "enabled");
+        } else {
+            document.body.classList.remove("dark");
+            localStorage.setItem("darkMode", "disabled");
+        }
+    });
+</script>
  
 </body>
 </html>
- 
